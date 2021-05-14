@@ -72,6 +72,7 @@ audio {
   grid-template-areas: "NSFW";
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
+  overflow: hidden;
 }
 
 .q {
@@ -87,7 +88,8 @@ audio {
 
 .ease-out {
   /* animation: name duration timing-function delay iteration-count direction fill-mode; */
-  animation: anim-ease-out 5s cubic-bezier(.31,-0.31,.46,1.29) 1s 1 forwards normal;
+  animation: anim-ease-out 5s cubic-bezier(0.31, -0.31, 0.46, 1.29) 1s 1
+    forwards normal;
 }
 
 @keyframes anim-ease-out {
@@ -182,7 +184,7 @@ button:hover {
   }
 }
 
-.about {
+/* .about {
   z-index: 3;
   position: fixed;
   left: 0;
@@ -192,14 +194,28 @@ button:hover {
   padding: 10px;
   grid-auto-flow: column;
   justify-content: space-between;
-}
+} */
 
-.about a {
+.link {
+  z-index: 3;
   text-decoration: none;
   color: var(--html-bg);
+  position: fixed;
+  font-size: 12px;
+  padding: 5px;
 }
 
-.about a:hover {
+.link:hover {
   color: var(--html-clr);
   text-decoration: underline;
+}
+
+.by {
+  left: 0;
+  top: 0;
+}
+
+.based {
+  right: 0;
+  bottom: 0;
 }
