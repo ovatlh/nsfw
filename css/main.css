@@ -202,12 +202,15 @@ button:hover {
   color: var(--html-bg);
   position: fixed;
   font-size: 12px;
+  font-weight: 600;
   padding: 5px;
+  opacity: 0.5;
 }
 
 .link:hover {
   color: var(--html-clr);
   text-decoration: underline;
+  opacity: 1;
 }
 
 .by {
