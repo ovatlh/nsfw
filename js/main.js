@@ -53,7 +53,7 @@ function addRandomIMG() {
   var img = document.createElement("img");
   var maxHeight = (screen.height - ((screen.height / 100) * 30));
 
-  img.src = `files/gifs/${getRandomInt(1, 61)}.gif`;
+  img.src = `files/gifs/${getRandomInt(1, 62)}.gif`;
   var res = getRandomInt(1, 2);
   if(res === 1){
     img.classList.add("left-right");
